@@ -13,6 +13,7 @@ body {
     scroll-behavior: smooth;
     background-repeat: no-repeat;
     text-shadow: black;
+    height: 100vh;
     background-attachment: fixed;
 }
 a.barra-principal {
