@@ -146,7 +146,7 @@ footer {
 }
 @media (max-width: 480px) {
     body{
-        background-size:auto;
+        background-size:cover;
     }
 }
 @media (max-width: 480px) {
@@ -163,4 +163,8 @@ footer {
     body{
     background-repeat: no-repeat;
     }
+}
+@media (max-width: 480px) {
+    body {
+    height:100%;
 }
