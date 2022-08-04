@@ -169,3 +169,18 @@ footer {
     height:100%;
   }
 }
+@media (max-width: 480px) {
+    section{
+        max-width: 100vh;
+    }
+}
+@media (max-width: 480px) {
+    section{
+        display:run-in;
+    }
+}
+@media (max-width: 480px) {
+    nav.barra-principal{
+position: relative;
+    }
+}
