@@ -1,8 +1,10 @@
 body {
     background-image:url("images2.webp");
-    background-size: 90rem;
-    height: 2rem;
+    background-size: cover;
+    height: 100vh;
     color: #999;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 h1 {
     text-align: center;
