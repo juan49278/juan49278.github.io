@@ -16,8 +16,17 @@ body {
     height: 100vh;
     background-attachment: fixed;
 }
+.nav-boton {
+    padding: 10px 0;
+    background-color:blueviolet;
+    border: 2px solid white;
+    display: none;
+    color: #fff;
+    font-size:x-large;
+}
 a.barra-principal {
-padding: 0.9rem;
+padding: 10px 30px;
+display: inline-block;
 text-align: center;
 font-size: x-large;
 color:white;
@@ -25,13 +34,12 @@ text-decoration: none;
 font-weight: bold;
 font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
-nav.barra-principal {
-    margin: 1rem;
-    color:white;
+nav{
     display: flex;
-    justify-content: space-evenly;
+    padding: 10px;
+    justify-content: space-around;
 }
-nav.barra-principal a:hover{
+a.barra-principal:hover{
     background-color: blueviolet;
     color:red;
     text-decoration:underline;
@@ -70,6 +78,7 @@ section {
     padding: 3rem;
     margin: 1rem;
     margin-left: 2rem;
+    margin-top: 3rem;
 }
 img.parrafo1 {
     float: left;
@@ -134,38 +143,33 @@ footer {
    width:100%;
    background:#999
 }
-@media (max-width: 480px) {
-    nav.barra-principal{
+@media (max-width: 600px) {
+    nav{
         flex-direction: column;
+        color: whitesmoke;
+    }
+    .barra-principal{
+        margin: 10px 0px;
+    }
+    .nav-boton{
+        display: inline-block;
+    }
+    a.desaparece{
+        display: none;
     }
 }
-@media (max-width: 480px) {
-    nav.barra-principal{
-        font-size: 0.2%;
-    }
-}
-@media (max-width: 480px) {
-    body{
-        background-size:cover;
-    }
-}
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     section{
-    display:flexbox;
+    display: grid;
+    background-size: 100vh;
+    position:sticky;
+    width: min-content;
 }
 }
 @media (max-width: 480px) {
     body{
-        background-attachment:fixed;
+       height: 100vh;
+       background-repeat: no-repeat;
+       background-size:cover;
     }
-}
-@media (max-width: 480px) {
-    body{
-    background-repeat: no-repeat;
-    }
-}
-@media (max-width: 480px) {
-    body {
-    height:100%;
-  }
 }

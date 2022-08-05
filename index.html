@@ -15,12 +15,14 @@
     </h1>
     </p>
     <p>
-        <nav class="barra-principal">
-        <a class="barra-principal" href="index.html"><strong>Inicio</strong></a>
-        <a class="barra-principal" href="medios_de_pago.html"><strong>Medios de pago</strong></a>
-        <a class="barra-principal" href="contact.html"><strong>Contacto</strong></a>
-        <a class="barra-principal" href="about.html"><strong>Acerca de</strong></a>
+        <nav>
+        <button class="nav-boton" onclick="accion()">Menu</button>
+        <a href="index.html" class="barra-principal desaparece">Inicio</a>
+        <a href="medios_de_pago.html" class="barra-principal desaparece">Medios de pago</a>
+        <a href="contact.html" class="barra-principal desaparece">Contacto</a>
+        <a href="about.html" class="barra-principal desaparece">Acerca de</a>
     </nav>
+
     <section>
         <img class="parrafo1" src="images.webp" alt="images3" width="400">
     </p>
@@ -53,4 +55,12 @@
 </section>
 </body>
 <footer>Copyright 2022.Todos los derechos reservados <strong>JM Reparaciones</strong></footer>
+<script>
+    function accion(){
+    var ancla = document.getElementsByClassName('barra-principal');
+    for(var i = 0; i < ancla.length; i++){
+        ancla[i].classList.toggle('desaparece');
+    }
+}
+</script>
 </html>
