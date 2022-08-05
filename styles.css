@@ -34,10 +34,19 @@ text-decoration: none;
 font-weight: bold;
 font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+a.boton {
+    color: whitesmoke;
+    text-decoration: none;
+    text-rendering:geometricPrecision;
+}
+a.boton:hover{
+    text-transform: uppercase;
+    color: red;
+}
 nav{
     display: flex;
     padding: 10px;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 a.barra-principal:hover{
     background-color: blueviolet;
@@ -54,6 +63,12 @@ h3.cuerpo {
     padding-left: 3rem;
     display: flex;
     justify-content: space-around;
+}
+h3.login {
+    color: whitesmoke;
+}
+p.login {
+    color: whitesmoke;
 }
 p.parrafo1 {
     color:whitesmoke;
@@ -79,6 +94,16 @@ section {
     margin: 1rem;
     margin-left: 2rem;
     margin-top: 3rem;
+}
+section.login {
+    background-color: black;
+    color: whitesmoke;
+    opacity: 0.7;
+    position:relative;
+    box-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    
 }
 img.parrafo1 {
     float: left;
@@ -160,10 +185,15 @@ footer {
 }
 @media (max-width: 600px) {
     section{
-    display: grid;
+    display: inline-table;
+    flex-direction:column;
     background-size: 100vh;
-    position:sticky;
+    position:relative;
     width: min-content;
+    height:100%;
+    margin: 0%;
+    padding: 0%;
+    padding-top: 2rem;
 }
 }
 @media (max-width: 480px) {
