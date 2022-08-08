@@ -18,11 +18,13 @@ body {
 }
 .nav-boton {
     padding: 10px 0;
-    background-color:blueviolet;
-    border: 2px solid white;
     display: none;
-    color: #fff;
+    background-color: rgba(0, 0, 0, 0);
     font-size:x-large;
+    text-align: left;
+    transition:all;
+    transition-duration: 800ms;
+    border-color: rgba(0,0,0, 0);
 }
 a.barra-principal {
 padding: 10px 30px;
@@ -32,15 +34,18 @@ font-size: x-large;
 color:white;
 text-decoration: none;
 font-weight: bold;
+transition: all;
+transition-duration: 800ms;
 font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 a.boton {
     color: whitesmoke;
     text-decoration: none;
     text-rendering:geometricPrecision;
+    transition: all;
+    transition-duration: 800ms;
 }
 a.boton:hover{
-    text-transform: uppercase;
     color: red;
 }
 nav{
@@ -91,8 +96,7 @@ section {
     position:relative;
     box-align:center;
     padding: 3rem;
-    margin: 1rem;
-    margin-left: 2rem;
+    margin: 2rem;
     margin-top: 3rem;
 }
 section.login {
@@ -191,7 +195,7 @@ footer {
     position:relative;
     width: min-content;
     height:100%;
-    margin: 0%;
+    margin: 1rem;
     padding: 0%;
     padding-top: 2rem;
     padding-bottom: 3rem;
