@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="images2.ico" type="image/x-icon">
 </head>
 <body>
+    <div id="preloader"></div>
     <p>
     <h1>
         JM Reparaciones
@@ -63,5 +64,11 @@
         ancla[i].classList.toggle('desaparece');
     }
 }
+</script>
+<script>
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function(){
+        loader.style.display = "none";
+    })
 </script>
 </html>
