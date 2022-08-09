@@ -225,3 +225,6 @@ footer {
     position: fixed;
     animation-duration: 3s;
 }
+.swal-modal {
+    background:cornflowerblue;
+}
